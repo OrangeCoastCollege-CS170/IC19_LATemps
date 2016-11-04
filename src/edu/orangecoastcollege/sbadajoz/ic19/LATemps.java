@@ -53,10 +53,10 @@ public class LATemps {
         }
         avg /= 30;
         
-        System.out.println("~~~~~~~~~~Temperature Statistics~~~~~~~~~~"
+        System.out.print("~~~~~~~~~~Temperature Statistics~~~~~~~~~~"
                        + "\nSeptember's highest daily temperature was: " + max 
                        + "\nSeptember's average high temperature was:  " + twoDP.format(avg) 
-                       + "\nSeptember's most frequent " + ((modes.size() > 1)? "high temps were:  ":"high temp was:  "));
+                       + "\nSeptember's most frequent " + ((modes.size() > 1)? "high temps were:  ":"high temp was:   "));
         for(int i = 0 ; i < modes.size(); i ++) {
             System.out.print(modes.get(i) + " ");
         }
